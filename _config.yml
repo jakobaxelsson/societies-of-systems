@@ -1,5 +1,7 @@
 theme: minima
 
+author: Jakob Axelsson
+
 header_pages:
   - about.md
   - jakob-axelsson.md
