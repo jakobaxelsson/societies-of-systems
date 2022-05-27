@@ -1,3 +1,8 @@
+---
+layout: post
+categories:
+---
+
 About this site
 ===============
 
