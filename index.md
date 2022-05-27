@@ -1,6 +1,6 @@
 ---
-layout: post
-title: "Societies of systems"
+layout: home
+list_title: "Posts"
 categories:
 ---
 
