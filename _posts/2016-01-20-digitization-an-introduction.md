@@ -25,15 +25,15 @@ So what is behind digitization? Well, in essence, it is a technology development
 
 A similar development can be seen for _Internet bandwidth_, as shown in the next graph. Communication is now so fast that it pays off to build very distributed systems. Data can be gathered in one place, and processed or stored in another, while being presented in a third.
 
-![Internet connectivity](/assets/internet-connectivity.png)
+![Internet connectivity](https://jakobaxelsson.github.io/societies-of-systems/assets/internet-connectivity.png)
 
 It has also become cheap to put powerful _sensors_ on physical things. The next graph shows how the sensor industry predicts that the number of sensors will grow over the next ten years, from ten billion today to ten trillion. With improved communication, it becomes possible to access the data from a distance, which increases the value of the sensors.
 
-![Sensor trend](/assets/sensor-trend.jpg)
+![Sensor trend](https://jakobaxelsson.github.io/societies-of-systems/assets/sensor-trend.jpg)
 
 Lots of sensors produce lots of data that can now be gathered in the same place. Big data is a popular term for this, which also relates to the influential power provided by having access to data. Note in the next graph that the y-axis is linear, so this is what an exponential growth really looks like.
 
-![Global data](/assets/global-data.jpg)
+![Global data](https://jakobaxelsson.github.io/societies-of-systems/assets/global-data.jpg)
 
 System trends
 -------------
