@@ -6,10 +6,10 @@
                     <img alt="logo" src="{{ site.logo | escape | prepend: "/assets/img/" | relative_url }}"/>
                 {% endif %}
             </div>
-            <h1 class="site-title">
+            <h1 class="site-title" style="color: white; text-align: center;">
                 <a rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
             </h1>
-            <h2>{{ site.subtitle | escape}}</h2>
+            <h2 style="color: white; text-align: center;">{{ site.subtitle | escape}}</h2>
         </div>
         <div class="wrapper">
             {%- assign default_paths = site.pages | map: "path" -%}
