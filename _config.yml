@@ -1,7 +1,7 @@
 theme: minima
 
 author:
-  - name: "Jakob Axelsson"
+  name: Jakob Axelsson
 
 header_pages:
   - about.md
