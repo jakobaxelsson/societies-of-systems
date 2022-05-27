@@ -5,6 +5,8 @@ date: 2016-11-29 12:00:00 -0000
 categories:
 ---
 
+![Orchestration](https://jakobaxelsson.github.io/societies-of-systems/assets/orchestration2.jpg)
+
 When creating an SoS, there is usually a certain functionality or capability which is sought. This functionality emerges as a consequence of the collaboration that the constituent systems engage in. The functionality does however not emerge out of the blue, but it has to be designed like any other engineered system. In some way, the constituents have to be told what they should do or how they should behave in order for the SoS to reach its objectives. How this information should be conveyed to the constituents is a fundamental design decision, which is sometimes also limited by the context of the SoS, including what authority the different stakeholders have in relation to each other.
 
 There have been attempts to identify recurring patterns, or archetypes, that are common in SoS with respect to this coordination. The most influential set of archetypes was initially proposed by Maier ([1996](https://archive.is/Rcc6e), [1998](https://www.google.se/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjT7Z7pqc3QAhUGKMAKHYGHBUgQFggiMAA&url=https%3A%2F%2Fwww.researchgate.net%2Ffile.PostFileLoader.html%3Fid%3D54db580fd5a3f2265f8b4609%26assetKey%3DAS%253A273698123124736%25401442266126003&usg=AFQjCNHkvDHWf8OeNK163ABx11GRMpfNpw)), and then extended by [Dahmann and Baldwin (2008)](http://ieeexplore.ieee.org/document/4518994/). It is based on the authority and responsibility in managing the evolution of the SoS, and consists of the following archetypes, as interpreted by [Lane and Epstein (2013)](https://www.google.se/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwi1uLjYq83QAhWrIMAKHcxnChUQFggdMAA&url=http%3A%2F%2Fcsse.usc.edu%2FTECHRPTS%2F2013%2Freports%2Fusc-csse-2013-500.pdf&usg=AFQjCNHMx-yFJ1Kh0Xq_XiTnpmDCCc7QRg):
@@ -30,3 +32,5 @@ Although this set of archetypes gives interesting perspectives on the power dist
 The parallel to the SoS archetypes is pretty obvious: a directed SoS is designed as an orchestration, whereas a virtual SoS is based on choreography. The other archetypes constitute a mix of the two.
 
 Personally, I have always found the SoS archetypes difficult to apply in practice, possibly since most concrete SoS examples are in the mixed categories, and these are not very distinct. Possibly, a route forward is to instead refine the concepts of orchestration and choreography to concretize for a given case how collaboration actually is coordinated?
+
+![Choreography](https://jakobaxelsson.github.io/societies-of-systems/assets/choreography.jpg)
