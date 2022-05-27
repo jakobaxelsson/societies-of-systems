@@ -1,5 +1,3 @@
-# Societies of Systems
-
 About this site
 ===============
 
