@@ -21,7 +21,7 @@ Technical trends
 
 So what is behind digitization? Well, in essence, it is a technology development that has been going on at an even pace for a long time, and which is often referred to as _Moore’s law_. This well known trend is 50 years old, and says, a bit simplified, that the performance of electronics doubles every second year without increasing the cost. The below graph shows this development from 1970 to today. Note that the y axis is logarithmic, so that today’s electronics has _10 million times_ the performance of the technology 50 years back. This means that it is all the time becoming possible to perform faster calculations, store and send more data, and provide more sensors at the same cost.
 
-![Moores law](/assets/moores-law.png)
+![Moores law](https://jakobaxelsson.github.io/societies-of-systems/assets/moores-law.png)
 
 A similar development can be seen for _Internet bandwidth_, as shown in the next graph. Communication is now so fast that it pays off to build very distributed systems. Data can be gathered in one place, and processed or stored in another, while being presented in a third.
 
