@@ -45,6 +45,8 @@ def create_page(path: Path, body: str):
         dom.p(dom.a("About", href = "/about.html"))
         dom.p(dom.a("Jakob Axelsson", href = "/jakob-axelsson.html"))
         dom.p(dom.img(src = "/assets/banner.jpg"))
+        dom.h1("Societies of Systems")
+        dom.h2("A journey into digitalization and the engineering of complex systems")
         raw(body)
     with path.open("w") as f:
         f.write(d.render())
