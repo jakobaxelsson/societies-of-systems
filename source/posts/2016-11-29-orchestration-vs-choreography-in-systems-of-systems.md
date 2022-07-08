@@ -5,7 +5,10 @@ date: 2016-11-29 12:00:00 -0000
 categories:
 ---
 
-![Orchestration](https://jakobaxelsson.github.io/societies-of-systems/assets/orchestration2.jpg)
+Orchestration vs. choreography in systems-of-systems
+====================================================
+
+![Orchestration](/assets/orchestration2.jpg)
 
 When creating an SoS, there is usually a certain functionality or capability which is sought. This functionality emerges as a consequence of the collaboration that the constituent systems engage in. The functionality does however not emerge out of the blue, but it has to be designed like any other engineered system. In some way, the constituents have to be told what they should do or how they should behave in order for the SoS to reach its objectives. How this information should be conveyed to the constituents is a fundamental design decision, which is sometimes also limited by the context of the SoS, including what authority the different stakeholders have in relation to each other.
 
@@ -33,4 +36,4 @@ The parallel to the SoS archetypes is pretty obvious: a directed SoS is designed
 
 Personally, I have always found the SoS archetypes difficult to apply in practice, possibly since most concrete SoS examples are in the mixed categories, and these are not very distinct. Possibly, a route forward is to instead refine the concepts of orchestration and choreography to concretize for a given case how collaboration actually is coordinated?
 
-![Choreography](https://jakobaxelsson.github.io/societies-of-systems/assets/choreography.jpg)
+![Choreography](/assets/choreography.jpg)

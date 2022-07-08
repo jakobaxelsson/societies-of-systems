@@ -5,6 +5,9 @@ date: 2016-12-21 12:00:00 -0000
 categories:
 ---
 
+Why there is a point in viewing an integrated system as a system-of-systems
+===========================================================================
+
 _Many discussions on systems-of-systems (SoS) take as a starting point a situation where the circumstances require a SoS approach. However, it can also be beneficial to choose to regard an integrated system as an SoS even in a situation where it is not an external requirement. In this essay, I will discuss why._
 
 Traditional systems engineering practices are inherently top-down, focusing initially on the overall requirements and breaking them down into subsystems and components. Then these are integrated and tested in various ways. SoS engineering, on the other hand, is more bottom-up, and focused on how existing systems can be combined to collaborate towards an objective which cannot be achieved by one system in isolation. Often, the particular characteristics of an SoS are regarded as problems that need to be solved, and this implicitly implies that the traditional top-down systems engineering process is the ideal to strive towards.

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dominate</title>
+  </head>
+  <body>
+    <p>
+      <a href="/index.html">Home</a>
+    </p>
+    <p>
+      <a href="/about.html">About</a>
+    </p>
+    <p>
+      <a href="/jakob-axelsson.html">Jakob Axelsson</a>
+    </p>
+    <p>
+      <img src="/assets/banner.jpg">
+    </p><h1>Why there is a point in viewing an integrated system as a system-of-systems</h1>
+<p><em>Many discussions on systems-of-systems (SoS) take as a starting point a situation where the circumstances require a SoS approach. However, it can also be beneficial to choose to regard an integrated system as an SoS even in a situation where it is not an external requirement. In this essay, I will discuss why.</em></p>
+<p>Traditional systems engineering practices are inherently top-down, focusing initially on the overall requirements and breaking them down into subsystems and components. Then these are integrated and tested in various ways. SoS engineering, on the other hand, is more bottom-up, and focused on how existing systems can be combined to collaborate towards an objective which cannot be achieved by one system in isolation. Often, the particular characteristics of an SoS are regarded as problems that need to be solved, and this implicitly implies that the traditional top-down systems engineering process is the ideal to strive towards.</p>
+<p>But is this necessarily so? Maybe there could be situations where the SoS bottom-up perspective is actually superior to top-down systems engineering? Let us return to <a href="https://jakobaxelsson.github.io/societies-of-systems/2016/01/18/system-of-systems-challenges.html">Maier’s five defining characteristics of an SoS</a>, and analyze how they can be reflected as opportunities in contemporary software-intensive systems practices:</p>
+<ul>
+<li><p><em>Operational independence</em>. A strong trend in the software architecture field has for a long time been to componentize applications, and this is in order to enable reuse of artifacts between different systems. Sometimes, this reuse can be more systematic, by using platforms and product lines. More recently, the concept of <em>microservices</em> has become popular, and has been well described by <a href="http://www.martinfowler.com/articles/microservices.html">Martin Fowler</a>. The term is perhaps a bit misleading, in that a microservice is not necessarily small, but can be arbitrarily complex. Each microservice is deployable on its own, and relates to specific business objectives, and thus fulfils the concept of operational independence. The microservices typically communicate through Internet protocols and web services. One benefit of microservices compared to monolithic systems is that they allow a more flexible capacity scaling when being deployed in cloud environments, since additional instances of a particular service can be added without having to replicate the whole system.</p>
+</li>
+<li><p><em>Managerial independence</em>. A strong trend in contemporary system development is to use <em>agile</em> principles, where small teams work fairly independently on a part of the system. This has proven to be extremely efficient in many situations, but it can create problems in more complex systems where the integration between teams becomes tricky. However, when combined with an architectural approach like microservices, each team can be given the responsibility for one service, and hence the components become managerially independent from each other. The benefit is to make maximal use of the agile strengths and minimize costly coordination activities. Of course, one could argue that typical agile teams are not totally independent, but usually part of the same larger organization. However, in open source communities this is not the case, but the organizations are voluntary participants with clear managerial independence.</p>
+</li>
+<li><p><em>Evolutionary development</em>. Having the microservices in place, and under the responsibility of agile teams, it becomes quite natural to let them evolve their services fairly independently. Thus, the evolutionary development becomes a natural consequence of the independence of the components, and makes it possible to adapt to new needs or fix issues much more rapidly than in a monolithic system.</p>
+</li>
+<li><p><em>Emergence</em>. Even though the independence and evolutionary development of the microservices provide many benefits, there is still a need for some central authority which ensures that the combination of components provide the desired emergent capabilities and properties. This is achieved by selecting what constituent systems are needed, and designing the rules of interaction between them. As discussed in one of my previous <a href="https://jakobaxelsson.github.io/societies-of-systems/2016/11/29/orchestration-vs-choreography-in-systems-of-systems.html">essays</a> this can be achieved by orchestration and choreography between the selected microservices. The fact that the system has been componentized is a strength, since the components can be used to create new SoS with different emergent properties, either as part of an organized product line, or more organically.</p>
+</li>
+<li><p><em>Geographical distribution</em>. A typical deployment of microservices is in a cloud platform, and even though this can occur within a single cloud datacenter at one geographical location, it still fulfills the criteria of geographical distribution. This is because the components do not make any assumptions of the location of other components and uses general Internet techniques for communication. In this way, it becomes possible to build a globally distributed system that has benefits in response time for local users as well as resilience in not being dependent on a single deployment, but being possible to quickly reassign to different server halls.</p>
+</li>
+</ul>
+<p>To summarize, the combination of microservice based architectures with development in agile teams that allow components to evolve at their own pace and be deployed independently in a cloud environment is effectively a SoS approach to software development.</p>
+<p>So maybe SoS engineering is the answer to how to do systems engineering in a more agile way – something that has been a long-standing challenge to the systems engineering community. Maybe it is time to do away with the top-down approach as the ideal for systems engineering? However, this way of working of course gives new challenges for the SoS architects, since it becomes crucial to find a division of the system into microservice that is effective over time. Possibly, the principles for such architectures could be common for traditional SoS and the software-intensive variants described in this text.</p>
+<p><strong><em>Acknowledgment</em></strong><em>: This essay was inspired by a talk by Ben Ramsey at the Colloquium on Software-intensive Systems-of-Systems in Copenhagen, Nov. 29, 2016, where he argued that certain open source software projects can be fruitfully regarded as SoS.</em></p>
+
+  </body>
+</html>
