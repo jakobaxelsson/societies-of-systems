@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dominate</title>
+    <title>Societies of Systems</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    <link href="/favicon-bee.png" rel="icon" sizes="32x32" type="image/png">
+    <style>
+img { display: block; margin-left: auto; margin-right: auto; }
+h1 { text-transform: uppercase; text-align: center; }
+a { color: black; text-decoration: underline; }
+* { font-family: &quot;Century Schoolbook&quot;, Century, Garamond, serif; }
+</style>
   </head>
   <body>
-    <p>
-      <a href="/index.html">Home</a>
-    </p>
-    <p>
-      <a href="/about.html">About</a>
-    </p>
-    <p>
-      <a href="/jakob-axelsson.html">Jakob Axelsson</a>
-    </p>
-    <p>
-      <img src="/assets/banner.jpg">
-    </p>
-    <h1>Societies of Systems</h1>
-    <h2>A journey into digitalization and the engineering of complex systems</h2><h1>Digitization: An introduction</h1>
-<p><em>One of the most important trends in society today is the digitization of almost everything. It is also the trend that makes systems-of-systems an urgent topic. But what is digitization all about? Here, I will give an overview of what I perceive as some of the most important trends that make digitization happen today, as well as some of the challenges.</em></p>
+    <nav class="navbar">
+      <a class="navbar-item" href="/index.html">Home</a>
+      <a class="navbar-item" href="/about.html">About</a>
+      <a class="navbar-item" href="/jakob-axelsson.html">Jakob Axelsson</a>
+    </nav>
+    <div style="position: relative; text-align: center; color: white;">
+      <img src="/assets/banner.jpg" style="object-fit: cover; height: 300px; width: 100%; ">
+      <h1 class="title is-1 has-text-white" style="position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); text-transform: uppercase;">Societies of Systems</h1>
+      <h2 class="subtitle is-4 has-text-white is-italic" style="position: absolute; top: 85%; left: 50%; transform: translate(-50%, -50%);">A journey into digitalization and the engineering of complex systems</h2>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <div class="content"><h1 class="title is-1">Digitization: An introduction</h1><p><em>One of the most important trends in society today is the digitization of almost everything. It is also the trend that makes systems-of-systems an urgent topic. But what is digitization all about? Here, I will give an overview of what I perceive as some of the most important trends that make digitization happen today, as well as some of the challenges.</em></p>
 <p>On Nov. 24, 2015, I had the honor of addressing a group of some 200 key decision makers in the automotive industry at the annual conference of the <a href="https://www.vinnova.se/m/fordonsstrategisk-forskning-och-innovation/">Swedish vehicle research and innovation program (FFI)</a>. The topic I was asked to talk about was <em>digitization</em>, to give the audience an understanding of what it is and why it is happening right now. The talk was in Swedish, and can be seen <a href="https://www.youtube.com/watch?v=3uzEVDFmOYQ&amp;index=4&amp;list=PLI7DD2rwMEJ6dMZcwoIRM429p0sGO1VOt">online</a>. In this post, I will summarize some of the topics I brought up in the talk, as a background on digitization that is important to understand the challenges related to systems-of-systems.</p>
 <p>Digitization is a trend that is affecting everybody and every part of society, and due to the many uncertainties connected to it, a lot of people are experiencing what one might call a <em>“digital anxiety”</em>. The effects will be large, some thinkers are suggesting that we will all be out of jobs, and that the gaps between rich and poor will increase. Others, on the contrary, argue that this could be the beginning of a new golden age, where new and better jobs will replace the old ones. Politicians are talking about a new industrialization where the digital technology is breathing new life into manufacturing.</p>
 <p>In my work as a researcher, I often meet professionals who describe a similar digital anxiety, but from the perspective of their company. They ask questions such as: How should we relate to the new technology? How will the market and business models change? Will Google or some other actor steal our customers? Of course, nobody knows the answers to these questions, but the best one can do is to increase one’s knowledge of the underlying forces. My target with this post is to briefly summarize the technical trends that are behind industrialization, and point at some challenges for industry, in particular manufacturing companies as exemplified by the automotive business.</p>
-<h2>Technical trends</h2>
-<p>So what is behind digitization? Well, in essence, it is a technology development that has been going on at an even pace for a long time, and which is often referred to as <em>Moore’s law</em>. This well known trend is 50 years old, and says, a bit simplified, that the performance of electronics doubles every second year without increasing the cost. The below graph shows this development from 1970 to today. Note that the y axis is logarithmic, so that today’s electronics has <em>10 million times</em> the performance of the technology 50 years back. This means that it is all the time becoming possible to perform faster calculations, store and send more data, and provide more sensors at the same cost.</p>
+<h2 class="title is-2">Technical trends</h2><p>So what is behind digitization? Well, in essence, it is a technology development that has been going on at an even pace for a long time, and which is often referred to as <em>Moore’s law</em>. This well known trend is 50 years old, and says, a bit simplified, that the performance of electronics doubles every second year without increasing the cost. The below graph shows this development from 1970 to today. Note that the y axis is logarithmic, so that today’s electronics has <em>10 million times</em> the performance of the technology 50 years back. This means that it is all the time becoming possible to perform faster calculations, store and send more data, and provide more sensors at the same cost.</p>
 <p><img src="/assets/moores-law.png" alt="Moores law" /></p>
 <p>A similar development can be seen for <em>Internet bandwidth</em>, as shown in the next graph. Communication is now so fast that it pays off to build very distributed systems. Data can be gathered in one place, and processed or stored in another, while being presented in a third.</p>
 <p><img src="/assets/internet-connectivity.png" alt="Internet connectivity" /></p>
@@ -31,21 +37,20 @@
 <p><img src="/assets/sensor-trend.jpg" alt="Sensor trend" /></p>
 <p>Lots of sensors produce lots of data that can now be gathered in the same place. Big data is a popular term for this, which also relates to the influential power provided by having access to data. Note in the next graph that the y-axis is linear, so this is what an exponential growth really looks like.</p>
 <p><img src="/assets/global-data.jpg" alt="Global data" /></p>
-<h2>System trends</h2>
-<p>So what are the consequences of these technology trends on how systems are built? One consequence is that it becomes interesting to put plenty of sensors on physical items, and connect them to the Internet, which is often referred to as the <em>Internet of Things.</em> Examples of this can be found in building automation, so called smart homes, but similar solutions are discussed in many industries.</p>
+<h2 class="title is-2">System trends</h2><p>So what are the consequences of these technology trends on how systems are built? One consequence is that it becomes interesting to put plenty of sensors on physical items, and connect them to the Internet, which is often referred to as the <em>Internet of Things.</em> Examples of this can be found in building automation, so called smart homes, but similar solutions are discussed in many industries.</p>
 <p>Access to computational resources has also become very flexible through <em>cloud computing</em>. In essence, this is just large server halls where users can buy capacity instead of buying their own computers. But this leads to extremely low entrance thresholds for new IT companies, since almost no capital investments are required. Instead, more computational power is rented as demand is increasing.</p>
 <p>To have any use for all the data that these systems generate, it must be processed, but this is challenged by the limitations of our ability to develop <em>algorithms</em> that can solve complex problems. Instead of hand crafting algorithms, advanced techniques from <em>artificial intelligence</em> such as machine learning are needed, to automatically find interesting information in all the data. Simply speaking, this means that the computer is not told how to solve the task, but instead it is trained on a number of examples to find patterns. Like many of the issues already described above, these are old techniques, but it is only now that there are sufficient computational resources available to solve interesting, real-life problems. It is also only now that there is sufficient amount of data to train the algorithms.</p>
 <p>One important factor why digitization is happening now, and not before, is also that cheap, powerful, and always connected terminals have become available for most people through <em>smart phones</em>. This increases the potential clientele for digital services, and increases the time and place where those services are available, since they no more require that we are using them in front of our computers.</p>
 <p>Last but not least has the standards for software matured, and in particular the standards used on the web. This makes it very easy to give a system a <em>data interface</em> towards other systems. One very important development in this is that it now becomes possible to view a system as a component in a larger <em>system-of-systems</em>.</p>
-<h2>Benefits</h2>
-<p>So what <em>benefits</em> is it that people try to achieve through digitization? Well, if you scratch the surface and try to find common factors, the services are often about <em>automation of workflows</em>. It is about connecting different systems to a system-of-system, where data is transmitted automatically between the parts, whereas before a person had to move the data manually. Along the way, automatic data processing is also introduced, that can make better decisions than humans due to a more detailed world view. It further becomes faster, more predictable, and eliminates the risk for human mistakes. One example of companies utilizing this is <a href="http://www.klarna.se/">Klarna</a> to make extremely fast and accurate credit assessments.</p>
+<h2 class="title is-2">Benefits</h2><p>So what <em>benefits</em> is it that people try to achieve through digitization? Well, if you scratch the surface and try to find common factors, the services are often about <em>automation of workflows</em>. It is about connecting different systems to a system-of-system, where data is transmitted automatically between the parts, whereas before a person had to move the data manually. Along the way, automatic data processing is also introduced, that can make better decisions than humans due to a more detailed world view. It further becomes faster, more predictable, and eliminates the risk for human mistakes. One example of companies utilizing this is <a href="http://www.klarna.se/">Klarna</a> to make extremely fast and accurate credit assessments.</p>
 <p>Another type of efficiency improvement is to <em>better match supply and demand</em>. Companies like <a href="http://www.uber.com/">Uber</a> and <a href="http://www.airbnb.com/">AirBnB</a> make unused resources in the form of cars and beds available for customers who could perhaps not afford a traditional taxi or hotel.</p>
 <p>A third effect is the possibility to open up the systems for external extensions, which is sometimes referred to as <em>open innovation</em>. A good example of this is the possibility to download apps from third party developers in a smart phone, but similar possibilities exist also in other types of systems. The base system developer gets a more attractive product that can be customized for many uses. The app developer gets a market for their ideas. The customer gets a broader range of products to choose from. One can reason in similar ways regarding sharing of data and the creation of open service interfaces.</p>
-<h2>Consequences for industry</h2>
-<p>So what are the consequences for the manufacturing industries like the automotive business? One major concern is to what extent companies want to, and dare to, <em>open up</em> their products. This question is partly technical, focusing on what the system architecture should look like to be able to handle openness. But it also contains business concerns. Do you <em>want</em> to continue to “own” the customer, i.e. put your company in the center of the picture? <em>Can</em> you even own the customer? I do not believe that this will work in the future. Instead, I believe that we will increasingly view products such as cars as components in systems-of-systems, where they interact with other similar products (other cars); with the OEM’s cloud services; with public services; and with services from third parties. Focus will be moved from the individual products, to the larger context where the product is residing.</p>
+<h2 class="title is-2">Consequences for industry</h2><p>So what are the consequences for the manufacturing industries like the automotive business? One major concern is to what extent companies want to, and dare to, <em>open up</em> their products. This question is partly technical, focusing on what the system architecture should look like to be able to handle openness. But it also contains business concerns. Do you <em>want</em> to continue to “own” the customer, i.e. put your company in the center of the picture? <em>Can</em> you even own the customer? I do not believe that this will work in the future. Instead, I believe that we will increasingly view products such as cars as components in systems-of-systems, where they interact with other similar products (other cars); with the OEM’s cloud services; with public services; and with services from third parties. Focus will be moved from the individual products, to the larger context where the product is residing.</p>
 <p>Connected to this is also the OEM’s <em>strategy for handling partners</em>. Who do you want to work with in order to offer attractive services? How will you handle an increasingly fragmented landscape, where new actors rapidly appear, and then maybe disappear again? Where the software lifecycle is completely different from that of the physical product. <em>Speed and flexibility</em> will become keywords.</p>
 <p>A third aspect that I would like to emphasize is how to make the systems <em>trustworthy</em>. In the future, many products will become <em>reliant on other actors’</em> data, software and services. These will change at an increasingly higher pace, and the OEM will not be able to apply quality assurance in the same way as they do to physical components from suppliers today. So how can you ascertain that it is safe to use a product such as a vehicle as a component in a system-of-systems? Who is responsible for quality? How do you test it? My research indicates that there is a need to work with more dynamic solutions, where data is continuously brought back from operations, where incidents are evaluated before they become accidents, and where improved software is rapidly deployed to products in the field.</p>
 <p>So to conclude, it is apparent that digitization is a development that results from improved technology, and fundamentally by Moore’s law. However, the challenges for industry concern to a large extent how the technology can best be applied to the business, and how to do systems engineering under these new circumstances.</p>
-
+</div>
+      </div>
+    </div>
   </body>
 </html>
