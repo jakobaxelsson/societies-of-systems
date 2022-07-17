@@ -21,11 +21,13 @@ h1
     font-size: 38px
     font-style: normal
     font-weight: 400
-    line-height: 45.6px
+    line-height: 45px
     text-align: center
     text-size-adjust: 100%
     text-transform: uppercase
     vertical-align: baseline
+    margin-top: 38px
+    margin-bottom: 30px
 
 a
     color: black
@@ -39,24 +41,9 @@ a
     text-size-adjust: 100%
     vertical-align: baseline
 
-.navbar
-    text-align: justify
-    font-size: 16px
-    line-height: 29px
-    &:after
-        content: ''
-        display: inline-block
-        width: 100%
-    &:before
-        content: ''
-        display: block
-    & > .navbar-item
-        display: inline-block
-        padding: 0.25em 1.5em
-        position: relative
-        text-decoration: none
-
-.banner
+header
+    background-image: url("/assets/banner.jpg")
+    background-size: cover
     display: block
     height: 500px
     margin-bottom: 0px
@@ -64,25 +51,62 @@ a
     max-width: 100%
     padding-bottom: 0px
     position: relative
+    bottom: 0px
 
-    & > .banner-image
-        object-fit: cover
-        height: 500px
+    .navbar
+        text-align: justify
+        font-size: 16px
+        line-height: 29px
+        height: 50px
+        background-color: rgba(0, 0, 0, 0.5)
+        &:after
+            content: ''
+            display: inline-block
+            width: 100%
+        &:before
+            content: ''
+            display: block
+        & > .navbar-item
+            display: inline-block
+            padding: 0.25em 1.5em
+            position: relative
+            text-decoration: none
+            color: white
+
     & > .site-title
-        position: absolute
-        top: 60%
-        left: 50%
-        transform: translate(-50%, -50%)
+        // position: absolute
+        // top: 60%
+        // left: 50%
+        // transform: translate(-50%, -50%)
         text-transform: uppercase
         font-size: 48px
         text-align: center
         color: white
+        margin-top: 300px
+        // padding-bottom: 30px
+
+        // clear: both
+        // display: block
+        // height: 58px
+        // max-width: 750px
+        // width: 750px
+        // padding-bottom: 28.8px
+        // position: relative
+        // font-size: 48px
+        // font-style: normal
+        // font-weight: 700
+        // line-height: 58px
+        // text-align: center
+        // text-size-adjust: 100%
+        // text-transform: uppercase
+        // vertical-align: baseline
+
     & > .site-subtitle
-        position: absolute
-        top: 85%
-        left: 50%
-        transform: translate(-50%, -50%)
-        font-sty-e: italic
+        // position: absolute
+        // top: 85%
+        // left: 50%
+        // transform: translate(-50%, -50%)
+        font-style: italic
         font-size: 17px
         text-align: center
         color: white

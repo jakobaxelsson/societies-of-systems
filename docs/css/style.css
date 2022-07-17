@@ -18,11 +18,13 @@ h1 {
   font-size: 38px;
   font-style: normal;
   font-weight: 400;
-  line-height: 45.6px;
+  line-height: 45px;
   text-align: center;
   text-size-adjust: 100%;
   text-transform: uppercase;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  margin-top: 38px;
+  margin-bottom: 30px; }
 
 a {
   color: black;
@@ -36,49 +38,44 @@ a {
   text-size-adjust: 100%;
   vertical-align: baseline; }
 
-.navbar {
-  text-align: justify;
-  font-size: 16px;
-  line-height: 29px; }
-  .navbar:after {
-    content: '';
-    display: inline-block;
-    width: 100%; }
-  .navbar:before {
-    content: '';
-    display: block; }
-  .navbar > .navbar-item {
-    display: inline-block;
-    padding: 0.25em 1.5em;
-    position: relative;
-    text-decoration: none; }
-
-.banner {
+header {
+  background-image: url("/assets/banner.jpg");
+  background-size: cover;
   display: block;
   height: 500px;
   margin-bottom: 0px;
   margin-top: 0px;
   max-width: 100%;
   padding-bottom: 0px;
-  position: relative; }
-  .banner > .banner-image {
-    object-fit: cover;
-    height: 500px; }
-  .banner > .site-title {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: relative;
+  bottom: 0px; }
+  header .navbar {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 29px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); }
+    header .navbar:after {
+      content: '';
+      display: inline-block;
+      width: 100%; }
+    header .navbar:before {
+      content: '';
+      display: block; }
+    header .navbar > .navbar-item {
+      display: inline-block;
+      padding: 0.25em 1.5em;
+      position: relative;
+      text-decoration: none;
+      color: white; }
+  header > .site-title {
     text-transform: uppercase;
     font-size: 48px;
     text-align: center;
-    color: white; }
-  .banner > .site-subtitle {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-sty-e: italic;
+    color: white;
+    margin-top: 300px; }
+  header > .site-subtitle {
+    font-style: italic;
     font-size: 17px;
     text-align: center;
     color: white; }

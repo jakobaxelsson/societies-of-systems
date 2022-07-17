@@ -53,15 +53,12 @@ def create_page(path: Path, page):
         # Add page type as class to body
         d.body["class"] = page["layout"]
 
-        # Navbar
-        with dom.nav(cls = "navbar"):
-            dom.a("Home", href = "/index.html", cls = "navbar-item")
-            dom.a("About", href = "/about.html", cls = "navbar-item")
-            dom.a("Jakob Axelsson", href = "/jakob-axelsson.html", cls = "navbar-item")
-
-        # Banner
-        with dom.div(cls = "banner"):
-            dom.img(src = "/assets/banner.jpg", cls = "banner-image")
+        with dom.header(cls = "header"):
+            # Navbar
+            with dom.nav(cls = "navbar"):
+                dom.a("Home", href = "/index.html", cls = "navbar-item")
+                dom.a("About", href = "/about.html", cls = "navbar-item")
+                dom.a("Jakob Axelsson", href = "/jakob-axelsson.html", cls = "navbar-item")
             dom.h1("Societies of Systems", cls = "site-title")
             dom.h2("A journey into digitalization and the engineering of complex systems", cls = "site-subtitle")
 
