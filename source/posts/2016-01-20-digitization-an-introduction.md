@@ -1,12 +1,9 @@
 ---
 layout: post
 title: "Digitization: An introduction"
-date: 2016-01-20 12:00:00 -0000
+date: 2016-01-20
 categories:
 ---
-
-Digitization: An introduction
-=============================
 
 _One of the most important trends in society today is the digitization of almost everything. It is also the trend that makes systems-of-systems an urgent topic. But what is digitization all about? Here, I will give an overview of what I perceive as some of the most important trends that make digitization happen today, as well as some of the challenges._
 

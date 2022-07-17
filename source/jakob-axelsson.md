@@ -4,9 +4,6 @@ title: "Jakob Axelsson"
 categories:
 ---
 
-Jakob Axelsson
-==============
-
 ![Jakob writing on glass](/assets/jakob-writing-on-glass.jpg)_Photo: Joel Höglund._
 
 I work as professor in Computer Science at [Mälardalen University](http://www.mdh.se) in Västerås, and also as senior research leader at [RISE Research Institutes of Sweden](https://ri.se).

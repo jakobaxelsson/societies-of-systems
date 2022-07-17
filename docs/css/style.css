@@ -1,0 +1,109 @@
+/*  The pages have the following structure:
+        - Menu bar, consisting of the three items Home, About, and Jakob Axelsson.
+        - Banner image, with some text overlayed.
+        - Title of the page.
+        - In the posts, this is followed by the creation date, a short abstract (in italics) and then text and images.
+        - The home page has an introductory text, and then the list of posts sorted in reverse by date.
+        - The about page has just the introductory text.
+        - The author page has an image and some text.
+    The layout and styling is inspired by the Book Lite theme from Wordpress, where it was originally published. */
+/* */
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto; }
+
+h1 {
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45.6px;
+  text-align: center;
+  text-size-adjust: 100%;
+  text-transform: uppercase;
+  vertical-align: baseline; }
+
+a {
+  color: black;
+  text-decoration: underline; }
+
+* {
+  font-family: "Century Schoolbook", Century, Garamond, serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 34px;
+  text-size-adjust: 100%;
+  vertical-align: baseline; }
+
+.navbar {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 29px; }
+  .navbar:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+  .navbar:before {
+    content: '';
+    display: block; }
+  .navbar > .navbar-item {
+    display: inline-block;
+    padding: 0.25em 1.5em;
+    position: relative;
+    text-decoration: none; }
+
+.banner {
+  display: block;
+  height: 500px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  max-width: 100%;
+  padding-bottom: 0px;
+  position: relative; }
+  .banner > .banner-image {
+    object-fit: cover;
+    height: 500px; }
+  .banner > .site-title {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: center;
+    color: white; }
+  .banner > .site-subtitle {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-sty-e: italic;
+    font-size: 17px;
+    text-align: center;
+    color: white; }
+
+.content {
+  max-width: 750px;
+  margin: auto; }
+
+.post-date {
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 30.6px;
+  text-align: center; }
+
+/* The first paragraph on each page starts with an Anfang character, and the first line is in uppercase letters. */
+.content > p:first-of-type::first-letter {
+  float: left;
+  line-height: 68px;
+  font-size: 76px;
+  font-family: Montserrat;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+  margin-bottom: -5px; }
+
+.content > p:first-of-type::first-line {
+  text-transform: uppercase; }

@@ -1,12 +1,9 @@
 ---
 layout: post
 title: "Society as a metaphor for systems-of-systems"
-date: 2016-01-27 12:00:00 -0000
+date: 2016-01-27
 categories:
 ---
-
-Society as a metaphor for systems-of-systems
-============================================
 
 _Whereas it is possible to reason about a single autonomous system by making parallels to an individual, and in particular the functioning of the human brain, the natural analogy for systems-of-systems is a society. Here, I will make an initial characterization of this analogy._
 

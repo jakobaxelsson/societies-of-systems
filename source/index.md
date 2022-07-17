@@ -1,11 +1,8 @@
 ---
 layout: home
-list_title: "Posts"
+title: "Societies of systems"
 categories:
 ---
-
-Societies of systems
-====================
 
 The purpose of this site is to investigate, through the form of short essays, various aspects related to _systems-of-systems_. One of the most important trends in current society is the _digitization_ of almost every human activity. This means that activities that used to be manual are taken over by technical systems and in particular by software. Human activities are thus _automated_ by systems, and those systems do not only become more complex than previous generations, but also need to be more intelligent to take over human tasks.
 

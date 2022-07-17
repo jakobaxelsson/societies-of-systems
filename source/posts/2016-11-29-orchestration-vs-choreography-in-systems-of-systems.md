@@ -1,12 +1,9 @@
 ---
 layout: post
 title: "Orchestration vs. choreography in systems-of-systems"
-date: 2016-11-29 12:00:00 -0000
+date: 2016-11-29
 categories:
 ---
-
-Orchestration vs. choreography in systems-of-systems
-====================================================
 
 ![Orchestration](/assets/orchestration2.jpg)
 

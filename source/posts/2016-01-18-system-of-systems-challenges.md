@@ -1,12 +1,9 @@
 ---
 layout: post
 title: "System-of-systems challenges"
-date: 2016-01-18 12:00:00 -0000
+date: 2016-01-18
 categories:
 ---
-
-System-of-systems challenges
-============================
 
 _The key topic of this site is systems-of-systems. But what is that? Here, I will explain some key definitions, and provide an overview of some of the challenges in the area._
 
