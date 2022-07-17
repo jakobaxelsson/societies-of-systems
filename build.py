@@ -48,7 +48,7 @@ def create_page(path: Path, page):
         with d.head:
             dom.meta(name = "viewport", content = "width=device-width, initial-scale=1")
             dom.link(rel = "stylesheet", href = "/css/style.css")
-            dom.link(rel = "icon", type = "image/png", sizes = "32x32", href = "/favicon-bee.png")
+            dom.link(rel = "icon", type = "image/png", sizes = "32x32", href = "/assets/favicon-bee.png")
 
         # Add page type as class to body
         d.body["class"] = page["layout"]
