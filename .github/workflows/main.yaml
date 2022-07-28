@@ -16,5 +16,6 @@ jobs:
         run: |
           git config --global user.name "jakobaxelsson"
           git config --global user.email "jakob.pm.axelsson@gmail.com"
-          git add docs git commit -m "Build site"
+          git add docs
+          git commit -m "Build site"
           git push
