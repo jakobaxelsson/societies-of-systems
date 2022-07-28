@@ -1,5 +1,8 @@
-# Workflow for building site using Github actions
-on: [push]
+# Workflow for building site using Github actions, which triggers when there is a change in any source file.
+on:
+  push:
+    paths:
+      - source/**
 
 jobs:
   build_site:
