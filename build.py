@@ -47,6 +47,7 @@ def create_page(path: Path, page):
         # Header information
         with d.head:
             dom.meta(name = "viewport", content = "width=device-width, initial-scale=1")
+            dom.meta(charset = "utf-8")
             dom.link(rel = "stylesheet", href = "/css/style.css")
             dom.link(rel = "icon", type = "image/png", sizes = "32x32", href = "/assets/favicon-bee.png")
 
@@ -68,8 +69,7 @@ def create_page(path: Path, page):
             if "date" in page:
                 dom.h3(f"Posted on {page['date']}", cls = "post-date")
             raw(page["body"])
-    with path.open("w") as f:
-        f.write(d.render())
+    path.write_text(d.render(), encoding = "utf-8")
     print(f"Generated {path} of page type {page['layout']}")
 
 
