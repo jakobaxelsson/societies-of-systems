@@ -12,3 +12,9 @@ jobs:
       - name: Build
         uses: ./ # Uses an action in the root directory
         id: build
+      - name: push changes to remote
+        run: |
+          git config --global user.name "jakobaxelsson"
+          git config --global user.email "jakob.pm.axelsson@gmail.com"
+          git add docs git commit -m "Build site"
+          git push
