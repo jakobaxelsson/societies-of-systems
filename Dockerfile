@@ -2,7 +2,8 @@
 FROM python
 
 # Install needed Python libraries
-RUN pip install -r /github/workspace/requirements.txt
+COPY ./requirements.txt ./requirements.txt
+RUN pip install -r ./requirements.txt
 
 # Make the repository the current working directory. This is automatically mounted by Github actions
 WORKDIR /github/workspace
