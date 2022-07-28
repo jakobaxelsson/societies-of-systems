@@ -1,0 +1,6 @@
+# Metadata file for Github actions
+name: 'Build site'
+description: 'Builds the web site'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

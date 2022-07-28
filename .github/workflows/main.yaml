@@ -1,0 +1,14 @@
+# Workflow for building site using Github actions
+on: [push]
+
+jobs:
+  build_site:
+    runs-on: ubuntu-latest
+    name: Build the site
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        uses: ./ # Uses an action in the root directory
+        id: build
