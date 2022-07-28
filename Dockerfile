@@ -9,4 +9,4 @@ RUN pip install -r ./requirements.txt
 WORKDIR /github/workspace
 
 # Run the build.py script
-ENTRYPOINT ["python build.py"]
+ENTRYPOINT ["python", "build.py"]
