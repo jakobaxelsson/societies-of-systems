@@ -1,9 +1,10 @@
 """
 Builds html files for the site from markdown. 
 The source code should be placed in the source directory, and the output will be placed in the docs directory.
-Also generates CSS from SASS.
+It also generates CSS from SASS, and an RSS feed of all posts.
 """
 
+import datetime
 from pathlib import Path
 import shutil
 
@@ -11,6 +12,7 @@ import dominate
 import dominate.tags as dom
 from dominate.util import raw
 import mistune
+import rfeed
 import sass
 import yaml
 
@@ -60,8 +62,9 @@ def create_page(path: Path, page):
                 dom.a("Home", href = "/index.html", cls = "navbar-item")
                 dom.a("About", href = "/about.html", cls = "navbar-item")
                 dom.a("Jakob Axelsson", href = "/jakob-axelsson.html", cls = "navbar-item")
-            dom.h1("Societies of Systems", cls = "site-title")
-            dom.h2("A journey into digitalization and the engineering of complex systems", cls = "site-subtitle")
+            with dom.div(cls = "header-text"):
+                dom.h1("Societies of Systems", cls = "site-title")
+                dom.h2("A journey into digitalization and the engineering of complex systems", cls = "site-subtitle")
 
         # Body
         with dom.div(cls = "content"):
@@ -108,3 +111,26 @@ if __name__ == "__main__":
         link = dom.p(dom.a(f"{post['title']} ({post['date']})", href = post["path"].relative_to(source).with_suffix(".html")))
         page["body"] += link.render()
     create_page(docs / "index.html", page)
+
+    # Create RSS feed
+    path = docs / "feed"
+    items = []
+    for post in posts:
+        item = rfeed.Item(
+            title = post["title"],
+            link = "",
+#            description = "",
+            author = "Jakob Axelsson",
+            guid = rfeed.Guid(""),
+            pubDate = datetime.datetime.fromisoformat(str(post["date"]))
+        )
+        items.append(item)
+    feed = rfeed.Feed(
+        title = "Societies of systems",
+        link = "",
+        description = "",
+        lastBuildDate = datetime.datetime.now(),
+        items = items
+    )
+    path.write_text(feed.rss(), encoding = "utf-8")
+    print(f"Generated {path}")

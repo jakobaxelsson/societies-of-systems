@@ -11,6 +11,9 @@
 
 $font-stack: "Century Schoolbook", Century, Garamond, serif
 
+body, html
+    height: 100%
+
 img
     display: block
     margin: auto
@@ -42,16 +45,13 @@ a
     vertical-align: baseline
 
 header
+    height: 40%
+
     background-image: url("/assets/banner.jpg")
     background-size: cover
-    display: block
-    height: 500px
-    margin-bottom: 0px
-    margin-top: 0px
-    max-width: 100%
-    padding-bottom: 0px
+    background-position: center
+    background-repeat: no-repeat
     position: relative
-    bottom: 0px
 
     .navbar
         text-align: justify
@@ -73,43 +73,21 @@ header
             text-decoration: none
             color: white
 
-    & > .site-title
-        // position: absolute
-        // top: 60%
-        // left: 50%
-        // transform: translate(-50%, -50%)
-        text-transform: uppercase
-        font-size: 48px
+    .header-text
         text-align: center
+        position: absolute
+        top: 60%
+        left: 50%
         color: white
-        margin-top: 300px
-        // padding-bottom: 30px
+        transform: translate(-50%, -50%)
 
-        // clear: both
-        // display: block
-        // height: 58px
-        // max-width: 750px
-        // width: 750px
-        // padding-bottom: 28.8px
-        // position: relative
-        // font-size: 48px
-        // font-style: normal
-        // font-weight: 700
-        // line-height: 58px
-        // text-align: center
-        // text-size-adjust: 100%
-        // text-transform: uppercase
-        // vertical-align: baseline
+        & > .site-title
+            text-transform: uppercase
+            font-size: 48px
 
-    & > .site-subtitle
-        // position: absolute
-        // top: 85%
-        // left: 50%
-        // transform: translate(-50%, -50%)
-        font-style: italic
-        font-size: 17px
-        text-align: center
-        color: white
+        & > .site-subtitle
+            font-style: italic
+            font-size: 17px
 
 .content
     max-width: 750px
