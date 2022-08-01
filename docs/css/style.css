@@ -8,6 +8,14 @@
         - The author page has an image and some text.
     The layout and styling is inspired by the Book Lite theme from Wordpress, where it was originally published. */
 /* */
+* {
+  font-family: "Century Schoolbook", Century, Garamond, serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 34px;
+  text-size-adjust: 100%;
+  vertical-align: baseline; }
+
 body, html {
   height: 100%; }
 
@@ -33,33 +41,13 @@ a {
   color: black;
   text-decoration: underline; }
 
-* {
-  font-family: "Century Schoolbook", Century, Garamond, serif;
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 34px;
-  text-size-adjust: 100%;
-  vertical-align: baseline; }
-
 header {
   height: 40%;
   background-image: url("/assets/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  /*
-        background-image: url("/assets/banner.jpg")
-        background-size: cover
-        display: block
-        height: 500px
-        margin-bottom: 0px
-        margin-top: 0px
-        max-width: 100%
-        padding-bottom: 0px
-        position: relative
-        bottom: 0px */
-  /* */ }
+  position: relative; }
   header .navbar {
     text-align: justify;
     font-size: 16px;
