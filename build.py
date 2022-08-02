@@ -51,7 +51,9 @@ def create_page(path: Path, page):
             dom.meta(name = "viewport", content = "width=device-width, initial-scale=1")
             dom.meta(charset = "utf-8")
             dom.link(rel = "stylesheet", href = "/css/style.css")
+            dom.link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
             dom.link(rel = "icon", type = "image/png", sizes = "32x32", href = "/assets/favicon-bee.png")
+            dom.script(type = "text/javascript", src = "/assets/responsiveness.js")
 
         # Add page type as class to body
         d.body["class"] = page["layout"]
@@ -59,6 +61,8 @@ def create_page(path: Path, page):
         with dom.header(cls = "header"):
             # Navbar
             with dom.nav(cls = "navbar"):
+                with dom.a(href = "javascript:void(0);", cls = "icon", onclick = "toggle_menu()"):
+                    dom.i(cls = "fa fa-bars")
                 dom.a("Home", href = "/index.html", cls = "navbar-item")
                 dom.a("About", href = "/about.html", cls = "navbar-item")
                 dom.a("Jakob Axelsson", href = "/jakob-axelsson.html", cls = "navbar-item")
