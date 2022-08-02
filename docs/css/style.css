@@ -103,8 +103,7 @@ header {
 .content > p:first-of-type::first-line {
   text-transform: uppercase; }
 
-/* Make the navbar responsive, to display hamburger menu on small screens. */
-/* When the screen is less than 600 pixels wide, hide all links, except for the hamburger menu. */
+/* When the screen is less than 600 pixels wide, hide all navbar items, except for the hamburger menu. */
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {
     display: none; }
