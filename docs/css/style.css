@@ -72,12 +72,12 @@ header {
     transform: translate(-50%, -50%); }
     header .header-text > .site-title {
       text-transform: uppercase;
-      font-size: min(12vh, 55px, 90vw);
-      line-height: min(12vh * 1.2, 55px * 1.2, 90vw); }
+      font-size: min(750px / 13, 90vw / 13, 16vh, 48px);
+      line-height: min(750px / 13, 90vw / 13, 16vh, 48px) * 1.2; }
     header .header-text > .site-subtitle {
       font-style: italic;
-      font-size: 2vh;
-      line-height: 3vh; }
+      font-size: min(750px / 31, 90vw / 31, 8vh, 17px);
+      line-height: min(750px / 31, 90vw / 31, 8vh, 17px) * 1.2; }
 
 .content {
   max-width: 750px;

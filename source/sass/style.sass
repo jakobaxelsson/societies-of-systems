@@ -53,26 +53,6 @@ header
     background-repeat: no-repeat
     position: relative
 
-    // .navbar
-    //     text-align: justify
-    //     font-size: 16px
-    //     line-height: 29px
-    //     height: 50px
-    //     background-color: rgba(0, 0, 0, 0.5)
-    //     &:after
-    //         content: ''
-    //         display: inline-block
-    //         width: 100%
-    //     &:before
-    //         content: ''
-    //         display: block
-    //     & > .navbar-item
-    //         display: inline-block
-    //         padding: 0.25em 1.5em
-    //         position: relative
-    //         text-decoration: none
-    //         color: white
-
     .navbar
         overflow: hidden
         background-color: rgba(0, 0, 0, 0.25)
@@ -105,16 +85,14 @@ header
             // The text is 605 x 45 px given font-size 48px, i.e., 13 x 1.
             // The content max-width is 750 so to fit in one line, the max font size is around 55 (750 / 13).
             // However, the height should not exceed 10vh since the total space for the banner is 40%.
-            font-size: unquote("min(12vh, 55px, 90vw)")
-            line-height: unquote("min(12vh * 1.2, 55px * 1.2, 90vw)")
-            // font-size: 48px
+            font-size: unquote("min(750px / 13, 90vw / 13, 16vh, 48px)")
+            line-height: unquote("min(750px / 13, 90vw / 13, 16vh, 48px) * 1.2")
 
         & > .site-subtitle
             font-style: italic
             // The text is 532 x 17 px given font-size 17px, i.e., 31 x 1
-            font-size: 2vh
-            line-height: 3vh
-            // font-size: 17px
+            font-size: unquote("min(750px / 31, 90vw / 31, 8vh, 17px)")
+            line-height: unquote("min(750px / 31, 90vw / 31, 8vh, 17px) * 1.2")
 
 .content
     max-width: 750px
