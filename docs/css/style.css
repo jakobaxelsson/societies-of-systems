@@ -79,6 +79,12 @@ header {
       font-size: min(750px / 31, 90vw / 31, 8vh, 17px);
       line-height: min(750px / 31, 90vw / 31, 8vh, 17px) * 1.2; }
 
+footer {
+  font-style: italic;
+  font-size: 19px;
+  text-align: center;
+  padding-top: 19px; }
+
 .content {
   max-width: 750px;
   margin: auto; }

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why there is a point in viewing an integrated system as a system-of-systems"
+description: "Many discussions on systems-of-systems (SoS) take as a starting point a situation where the circumstances require a SoS approach. However, it can also be beneficial to choose to regard an integrated system as an SoS even in a situation where it is not an external requirement. In this essay, I will discuss why."
 date: 2016-12-21
 categories:
 ---

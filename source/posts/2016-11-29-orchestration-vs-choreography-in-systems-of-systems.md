@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Orchestration vs. choreography in systems-of-systems"
+description: "This post explores two different ways of coordinating activities in systems-of-systems, namely orchestration and choreography."
 date: 2016-11-29
 categories:
 ---

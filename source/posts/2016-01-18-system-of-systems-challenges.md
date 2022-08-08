@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "System-of-systems challenges"
+description: "This post explains some key definitions related to systems-of-systems, and provides an overview of challenges in the area."
 date: 2016-01-18
 categories:
 ---

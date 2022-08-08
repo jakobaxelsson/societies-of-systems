@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Digitization: An introduction"
+description: "This post explains some core aspect of digitalization, including underlying trends, benefits, and challenges."
 date: 2016-01-20
 categories:
 ---

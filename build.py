@@ -10,7 +10,7 @@ import shutil
 
 import dominate
 import dominate.tags as dom
-from dominate.util import raw
+from dominate.util import raw, text
 import mistune
 import rfeed
 import sass
@@ -76,6 +76,13 @@ def create_page(path: Path, page):
             if "date" in page:
                 dom.h3(f"Posted on {page['date']}", cls = "post-date")
             raw(page["body"])
+
+        # Footer
+        with dom.footer(cls = "footer"):
+            text("© Jakob Axelsson")
+            with dom.a(href = "/rss.xml"):
+                dom.i(cls = "fa fa-rss-square", style = "font-size: 22px; color: orange")
+
     path.write_text(d.render(), encoding = "utf-8")
     print(f"Generated {path} of page type {page['layout']}")
 
@@ -117,13 +124,13 @@ if __name__ == "__main__":
     create_page(docs / "index.html", page)
 
     # Create RSS feed
-    path = docs / "feed"
+    path = docs / "rss.xml"
     items = []
     for post in posts:
         item = rfeed.Item(
             title = post["title"],
-            link = "",
-#            description = "",
+            link = post["path"].relative_to(source).with_suffix(".html"),
+            description = post["description"],
             author = "Jakob Axelsson",
             guid = rfeed.Guid(""),
             pubDate = datetime.datetime.fromisoformat(str(post["date"]))
@@ -132,8 +139,9 @@ if __name__ == "__main__":
     feed = rfeed.Feed(
         title = "Societies of systems",
         link = "",
-        description = "",
-        lastBuildDate = datetime.datetime.now(),
+        description = "Societies of systems: A journey into digitalization and the engineering of complex systems",
+        # Use the date of the most recent post as the last build date.
+        lastBuildDate = datetime.datetime.fromisoformat(str(posts[0]["date"])),
         items = items
     )
     path.write_text(feed.rss(), encoding = "utf-8")
