@@ -73,11 +73,11 @@ header {
     header .header-text > .site-title {
       text-transform: uppercase;
       font-size: min(750px / 13, 90vw / 13, 16vh, 48px);
-      line-height: min(750px / 13, 90vw / 13, 16vh, 48px) * 1.2; }
+      line-height: min(900px / 13, 108vw / 13, 19vh, 58px); }
     header .header-text > .site-subtitle {
       font-style: italic;
       font-size: min(750px / 31, 90vw / 31, 8vh, 17px);
-      line-height: min(750px / 31, 90vw / 31, 8vh, 17px) * 1.2; }
+      line-height: min(900px / 31, 108vw / 31, 10vh, 20px); }
 
 footer {
   font-style: italic;

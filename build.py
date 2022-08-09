@@ -82,6 +82,8 @@ def create_page(path: Path, page):
             text("© Jakob Axelsson")
             with dom.a(href = "/rss.xml"):
                 dom.i(cls = "fa fa-rss-square", style = "font-size: 22px; color: orange")
+#            rss_action = "navigator.clipboard.writeText('/rss.xml'); alert('Copied link to the RSS feed to the clipboard.');"
+#            dom.i(cls = "fa fa-rss-square", style = "font-size: 22px; color: orange", onclick = rss_action)
 
     path.write_text(d.render(), encoding = "utf-8")
     print(f"Generated {path} of page type {page['layout']}")
