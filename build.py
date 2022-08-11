@@ -80,6 +80,7 @@ def create_page(path: Path, page):
         # Footer
         with dom.footer(cls = "footer"):
             text("© Jakob Axelsson")
+            dom.a("✉", href = "mailto:jakob.axelsson@mdu.se?subject=Societies of systems", cls = "mailto")
             with dom.a(href = "/rss.xml"):
                 dom.i(cls = "fa fa-rss-square", style = "font-size: 22px; color: orange")
 #            rss_action = "navigator.clipboard.writeText('/rss.xml'); alert('Copied link to the RSS feed to the clipboard.');"
